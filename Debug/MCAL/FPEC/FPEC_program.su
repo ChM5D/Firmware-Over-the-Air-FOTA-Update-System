@@ -1,0 +1,6 @@
+../MCAL/FPEC/FPEC_program.c:36:13:FLASH_UNLOCK	4	static
+../MCAL/FPEC/FPEC_program.c:40:13:FLASH_LOCK	4	static
+../MCAL/FPEC/FPEC_program.c:43:13:WAIT_FOR_BSY	4	static
+../MCAL/FPEC/FPEC_program.c:49:6:FPEC_Write	32	static
+../MCAL/FPEC/FPEC_program.c:68:6:FPEC_EraseSectors	24	static
+../MCAL/FPEC/FPEC_program.c:88:5:FPEC_Get_ReadProtectionLevel	4	static
