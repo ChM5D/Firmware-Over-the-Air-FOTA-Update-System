@@ -72,15 +72,64 @@ Discarded input sections
  .group         0x00000000        0xc ./APP/Bootloader.o
  .group         0x00000000        0xc ./APP/Bootloader.o
  .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/Bootloader.o
  .text          0x00000000        0x0 ./APP/Bootloader.o
  .data          0x00000000        0x0 ./APP/Bootloader.o
  .bss           0x00000000        0x0 ./APP/Bootloader.o
- .debug_info    0x00000000       0x62 ./APP/Bootloader.o
- .debug_abbrev  0x00000000       0x28 ./APP/Bootloader.o
+ .bss.BL_HOST_RX_BUFFER
+                0x00000000       0xc8 ./APP/Bootloader.o
+ .text.Bootloader_Get_version
+                0x00000000       0x14 ./APP/Bootloader.o
+ .text.BL_UART_Fetch_Host_Command
+                0x00000000       0x74 ./APP/Bootloader.o
+ .debug_info    0x00000000      0x2b8 ./APP/Bootloader.o
+ .debug_abbrev  0x00000000      0x127 ./APP/Bootloader.o
  .debug_aranges
-                0x00000000       0x18 ./APP/Bootloader.o
- .debug_macro   0x00000000       0xbd ./APP/Bootloader.o
+                0x00000000       0x28 ./APP/Bootloader.o
+ .debug_rnglists
+                0x00000000       0x19 ./APP/Bootloader.o
+ .debug_macro   0x00000000      0x1ca ./APP/Bootloader.o
  .debug_macro   0x00000000      0xac0 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x22 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x5b ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x2a ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x94 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x43 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x34 ./APP/Bootloader.o
+ .debug_macro   0x00000000      0x189 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x16 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x43 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x57 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x34 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x10 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x58 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x8e ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x1c ./APP/Bootloader.o
+ .debug_macro   0x00000000      0x177 ./APP/Bootloader.o
+ .debug_macro   0x00000000      0x369 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x10 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x35 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x20 ./APP/Bootloader.o
  .debug_macro   0x00000000       0x40 ./APP/Bootloader.o
  .debug_macro   0x00000000       0x16 ./APP/Bootloader.o
  .debug_macro   0x00000000       0x16 ./APP/Bootloader.o
@@ -88,14 +137,37 @@ Discarded input sections
  .debug_macro   0x00000000       0xe8 ./APP/Bootloader.o
  .debug_macro   0x00000000       0x4c ./APP/Bootloader.o
  .debug_macro   0x00000000       0x52 ./APP/Bootloader.o
- .debug_macro   0x00000000       0xc4 ./APP/Bootloader.o
+ .debug_macro   0x00000000       0xca ./APP/Bootloader.o
  .debug_macro   0x00000000       0x3a ./APP/Bootloader.o
  .debug_macro   0x00000000       0x2e ./APP/Bootloader.o
- .debug_line    0x00000000      0x2ed ./APP/Bootloader.o
- .debug_str     0x00000000     0x3f3a ./APP/Bootloader.o
+ .debug_macro   0x00000000       0x34 ./APP/Bootloader.o
+ .debug_line    0x00000000      0x7b7 ./APP/Bootloader.o
+ .debug_str     0x00000000     0x7a30 ./APP/Bootloader.o
  .comment       0x00000000       0x44 ./APP/Bootloader.o
+ .debug_frame   0x00000000       0x54 ./APP/Bootloader.o
  .ARM.attributes
                 0x00000000       0x34 ./APP/Bootloader.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
+ .group         0x00000000        0xc ./APP/main.o
  .group         0x00000000        0xc ./APP/main.o
  .group         0x00000000        0xc ./APP/main.o
  .group         0x00000000        0xc ./APP/main.o
@@ -111,6 +183,26 @@ Discarded input sections
  .data          0x00000000        0x0 ./APP/main.o
  .bss           0x00000000        0x0 ./APP/main.o
  .debug_macro   0x00000000      0xac0 ./APP/main.o
+ .debug_macro   0x00000000       0x22 ./APP/main.o
+ .debug_macro   0x00000000       0x5b ./APP/main.o
+ .debug_macro   0x00000000       0x2a ./APP/main.o
+ .debug_macro   0x00000000       0x94 ./APP/main.o
+ .debug_macro   0x00000000       0x43 ./APP/main.o
+ .debug_macro   0x00000000       0x34 ./APP/main.o
+ .debug_macro   0x00000000      0x189 ./APP/main.o
+ .debug_macro   0x00000000       0x16 ./APP/main.o
+ .debug_macro   0x00000000       0x43 ./APP/main.o
+ .debug_macro   0x00000000       0x57 ./APP/main.o
+ .debug_macro   0x00000000       0x34 ./APP/main.o
+ .debug_macro   0x00000000       0x10 ./APP/main.o
+ .debug_macro   0x00000000       0x58 ./APP/main.o
+ .debug_macro   0x00000000       0x8e ./APP/main.o
+ .debug_macro   0x00000000       0x1c ./APP/main.o
+ .debug_macro   0x00000000      0x177 ./APP/main.o
+ .debug_macro   0x00000000      0x369 ./APP/main.o
+ .debug_macro   0x00000000       0x10 ./APP/main.o
+ .debug_macro   0x00000000       0x35 ./APP/main.o
+ .debug_macro   0x00000000       0x20 ./APP/main.o
  .debug_macro   0x00000000       0x40 ./APP/main.o
  .debug_macro   0x00000000       0x16 ./APP/main.o
  .debug_macro   0x00000000       0x16 ./APP/main.o
@@ -118,9 +210,10 @@ Discarded input sections
  .debug_macro   0x00000000       0xe8 ./APP/main.o
  .debug_macro   0x00000000       0x4c ./APP/main.o
  .debug_macro   0x00000000       0x52 ./APP/main.o
- .debug_macro   0x00000000       0xc4 ./APP/main.o
+ .debug_macro   0x00000000       0xca ./APP/main.o
  .debug_macro   0x00000000       0x3a ./APP/main.o
  .debug_macro   0x00000000       0x2e ./APP/main.o
+ .debug_macro   0x00000000       0x34 ./APP/main.o
  .group         0x00000000        0xc ./LIB/syscalls.o
  .group         0x00000000        0xc ./LIB/syscalls.o
  .group         0x00000000        0xc ./LIB/syscalls.o
@@ -251,7 +344,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./LIB/syscalls.o
  .debug_macro   0x00000000       0xce ./LIB/syscalls.o
  .debug_line    0x00000000      0x7e2 ./LIB/syscalls.o
- .debug_str     0x00000000     0x98bb ./LIB/syscalls.o
+ .debug_str     0x00000000     0x98b5 ./LIB/syscalls.o
  .comment       0x00000000       0x44 ./LIB/syscalls.o
  .debug_frame   0x00000000      0x2ac ./LIB/syscalls.o
  .ARM.attributes
@@ -314,11 +407,41 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./LIB/sysmem.o
  .debug_macro   0x00000000      0x1df ./LIB/sysmem.o
  .debug_line    0x00000000      0x4b3 ./LIB/sysmem.o
- .debug_str     0x00000000     0x60d3 ./LIB/sysmem.o
+ .debug_str     0x00000000     0x60cd ./LIB/sysmem.o
  .comment       0x00000000       0x44 ./LIB/sysmem.o
  .debug_frame   0x00000000       0x34 ./LIB/sysmem.o
  .ARM.attributes
                 0x00000000       0x34 ./LIB/sysmem.o
+ .group         0x00000000        0xc ./MCAL/CRC/CRC_program.o
+ .group         0x00000000        0xc ./MCAL/CRC/CRC_program.o
+ .group         0x00000000        0xc ./MCAL/CRC/CRC_program.o
+ .group         0x00000000        0xc ./MCAL/CRC/CRC_program.o
+ .text          0x00000000        0x0 ./MCAL/CRC/CRC_program.o
+ .data          0x00000000        0x0 ./MCAL/CRC/CRC_program.o
+ .bss           0x00000000        0x0 ./MCAL/CRC/CRC_program.o
+ .text.CRC_RESET_DR
+                0x00000000       0x20 ./MCAL/CRC/CRC_program.o
+ .text.CRC_Init
+                0x00000000       0x10 ./MCAL/CRC/CRC_program.o
+ .text.CRC_Accumlate
+                0x00000000       0x50 ./MCAL/CRC/CRC_program.o
+ .debug_info    0x00000000      0x149 ./MCAL/CRC/CRC_program.o
+ .debug_abbrev  0x00000000      0x10e ./MCAL/CRC/CRC_program.o
+ .debug_aranges
+                0x00000000       0x30 ./MCAL/CRC/CRC_program.o
+ .debug_rnglists
+                0x00000000       0x1f ./MCAL/CRC/CRC_program.o
+ .debug_macro   0x00000000       0x46 ./MCAL/CRC/CRC_program.o
+ .debug_macro   0x00000000      0xac0 ./MCAL/CRC/CRC_program.o
+ .debug_macro   0x00000000       0x40 ./MCAL/CRC/CRC_program.o
+ .debug_macro   0x00000000       0x34 ./MCAL/CRC/CRC_program.o
+ .debug_macro   0x00000000       0xee ./MCAL/CRC/CRC_program.o
+ .debug_line    0x00000000      0x16b ./MCAL/CRC/CRC_program.o
+ .debug_str     0x00000000     0x3393 ./MCAL/CRC/CRC_program.o
+ .comment       0x00000000       0x44 ./MCAL/CRC/CRC_program.o
+ .debug_frame   0x00000000       0x74 ./MCAL/CRC/CRC_program.o
+ .ARM.attributes
+                0x00000000       0x34 ./MCAL/CRC/CRC_program.o
  .group         0x00000000        0xc ./MCAL/FPEC/FPEC_program.o
  .group         0x00000000        0xc ./MCAL/FPEC/FPEC_program.o
  .group         0x00000000        0xc ./MCAL/FPEC/FPEC_program.o
@@ -349,8 +472,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x34 ./MCAL/FPEC/FPEC_program.o
  .debug_macro   0x00000000       0x40 ./MCAL/FPEC/FPEC_program.o
  .debug_macro   0x00000000       0x3a ./MCAL/FPEC/FPEC_program.o
- .debug_line    0x00000000      0x1ef ./MCAL/FPEC/FPEC_program.o
- .debug_str     0x00000000     0x3229 ./MCAL/FPEC/FPEC_program.o
+ .debug_line    0x00000000      0x1e9 ./MCAL/FPEC/FPEC_program.o
+ .debug_str     0x00000000     0x3223 ./MCAL/FPEC/FPEC_program.o
  .comment       0x00000000       0x44 ./MCAL/FPEC/FPEC_program.o
  .debug_frame   0x00000000       0xd8 ./MCAL/FPEC/FPEC_program.o
  .ARM.attributes
@@ -472,8 +595,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x28 ./MCAL/SCB/SCB_program.o
  .debug_macro   0x00000000       0x28 ./MCAL/SCB/SCB_program.o
  .debug_macro   0x00000000       0x10 ./MCAL/SCB/SCB_program.o
- .debug_line    0x00000000      0x108 ./MCAL/SCB/SCB_program.o
- .debug_str     0x00000000     0x32a7 ./MCAL/SCB/SCB_program.o
+ .debug_line    0x00000000      0x102 ./MCAL/SCB/SCB_program.o
+ .debug_str     0x00000000     0x32a1 ./MCAL/SCB/SCB_program.o
  .comment       0x00000000       0x44 ./MCAL/SCB/SCB_program.o
  .debug_frame   0x00000000       0x60 ./MCAL/SCB/SCB_program.o
  .ARM.attributes
@@ -532,7 +655,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xe8 ./MCAL/UART/UART_Lcfg.o
  .debug_macro   0x00000000       0x4c ./MCAL/UART/UART_Lcfg.o
  .debug_macro   0x00000000       0x52 ./MCAL/UART/UART_Lcfg.o
- .debug_macro   0x00000000       0xc4 ./MCAL/UART/UART_Lcfg.o
+ .debug_macro   0x00000000       0xca ./MCAL/UART/UART_Lcfg.o
  .debug_macro   0x00000000       0x3a ./MCAL/UART/UART_Lcfg.o
  .group         0x00000000        0xc ./MCAL/UART/UART_program.o
  .group         0x00000000        0xc ./MCAL/UART/UART_program.o
@@ -565,7 +688,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xe8 ./MCAL/UART/UART_program.o
  .debug_macro   0x00000000       0x4c ./MCAL/UART/UART_program.o
  .debug_macro   0x00000000       0x52 ./MCAL/UART/UART_program.o
- .debug_macro   0x00000000       0xc4 ./MCAL/UART/UART_program.o
+ .debug_macro   0x00000000       0xca ./MCAL/UART/UART_program.o
  .debug_macro   0x00000000       0x16 ./MCAL/UART/UART_program.o
  .debug_macro   0x00000000       0x16 ./MCAL/UART/UART_program.o
  .debug_macro   0x00000000       0x3a ./MCAL/UART/UART_program.o
@@ -840,6 +963,7 @@ LOAD ./APP/Bootloader.o
 LOAD ./APP/main.o
 LOAD ./LIB/syscalls.o
 LOAD ./LIB/sysmem.o
+LOAD ./MCAL/CRC/CRC_program.o
 LOAD ./MCAL/FPEC/FPEC_program.o
 LOAD ./MCAL/GPIO/GPIO_program.o
 LOAD ./MCAL/NVIC/NVIC_program.o
@@ -1218,33 +1342,33 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
                 0x0000028f       0x22 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixunsdfsi.o)
  .ARM.attributes
                 0x000002b1       0x22 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
-OUTPUT(BL_project.elf elf32-littlearm)
+OUTPUT(FOTA.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x00000000     0x1b05
- .debug_info    0x00000000      0x1cf ./APP/main.o
- .debug_info    0x000001cf      0x54a ./MCAL/GPIO/GPIO_program.o
- .debug_info    0x00000719      0x4e1 ./MCAL/NVIC/NVIC_program.o
- .debug_info    0x00000bfa      0x199 ./MCAL/RCC/RCC_program.o
- .debug_info    0x00000d93      0x315 ./MCAL/SYSTICK/SYSTICK_program.o
- .debug_info    0x000010a8      0x1a3 ./MCAL/UART/UART_Lcfg.o
- .debug_info    0x0000124b      0x800 ./MCAL/UART/UART_program.o
- .debug_info    0x00001a4b       0x8a ./Startup/System_Init.o
- .debug_info    0x00001ad5       0x30 ./Startup/startup_stm32f401ccux.o
+.debug_info     0x00000000     0x1b33
+ .debug_info    0x00000000      0x1fd ./APP/main.o
+ .debug_info    0x000001fd      0x54a ./MCAL/GPIO/GPIO_program.o
+ .debug_info    0x00000747      0x4e1 ./MCAL/NVIC/NVIC_program.o
+ .debug_info    0x00000c28      0x199 ./MCAL/RCC/RCC_program.o
+ .debug_info    0x00000dc1      0x315 ./MCAL/SYSTICK/SYSTICK_program.o
+ .debug_info    0x000010d6      0x1a3 ./MCAL/UART/UART_Lcfg.o
+ .debug_info    0x00001279      0x800 ./MCAL/UART/UART_program.o
+ .debug_info    0x00001a79       0x8a ./Startup/System_Init.o
+ .debug_info    0x00001b03       0x30 ./Startup/startup_stm32f401ccux.o
 
-.debug_abbrev   0x00000000      0x880
- .debug_abbrev  0x00000000       0xd4 ./APP/main.o
- .debug_abbrev  0x000000d4      0x141 ./MCAL/GPIO/GPIO_program.o
- .debug_abbrev  0x00000215      0x16f ./MCAL/NVIC/NVIC_program.o
- .debug_abbrev  0x00000384       0x9d ./MCAL/RCC/RCC_program.o
- .debug_abbrev  0x00000421      0x15a ./MCAL/SYSTICK/SYSTICK_program.o
- .debug_abbrev  0x0000057b       0xa1 ./MCAL/UART/UART_Lcfg.o
- .debug_abbrev  0x0000061c      0x1e7 ./MCAL/UART/UART_program.o
- .debug_abbrev  0x00000803       0x59 ./Startup/System_Init.o
- .debug_abbrev  0x0000085c       0x24 ./Startup/startup_stm32f401ccux.o
+.debug_abbrev   0x00000000      0x898
+ .debug_abbrev  0x00000000       0xec ./APP/main.o
+ .debug_abbrev  0x000000ec      0x141 ./MCAL/GPIO/GPIO_program.o
+ .debug_abbrev  0x0000022d      0x16f ./MCAL/NVIC/NVIC_program.o
+ .debug_abbrev  0x0000039c       0x9d ./MCAL/RCC/RCC_program.o
+ .debug_abbrev  0x00000439      0x15a ./MCAL/SYSTICK/SYSTICK_program.o
+ .debug_abbrev  0x00000593       0xa1 ./MCAL/UART/UART_Lcfg.o
+ .debug_abbrev  0x00000634      0x1e7 ./MCAL/UART/UART_program.o
+ .debug_abbrev  0x0000081b       0x59 ./Startup/System_Init.o
+ .debug_abbrev  0x00000874       0x24 ./Startup/startup_stm32f401ccux.o
 
 .debug_aranges  0x00000000      0x2f8
  .debug_aranges
@@ -1285,52 +1409,52 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_rnglists
                 0x000001fa       0x19 ./Startup/startup_stm32f401ccux.o
 
-.debug_macro    0x00000000      0x756
- .debug_macro   0x00000000       0xc7 ./APP/main.o
- .debug_macro   0x000000c7       0x45 ./MCAL/GPIO/GPIO_program.o
- .debug_macro   0x0000010c      0x12a ./MCAL/GPIO/GPIO_program.o
- .debug_macro   0x00000236       0x45 ./MCAL/NVIC/NVIC_program.o
- .debug_macro   0x0000027b       0x28 ./MCAL/NVIC/NVIC_program.o
- .debug_macro   0x000002a3       0x16 ./MCAL/NVIC/NVIC_program.o
- .debug_macro   0x000002b9       0x44 ./MCAL/RCC/RCC_program.o
- .debug_macro   0x000002fd      0x1fc ./MCAL/RCC/RCC_program.o
- .debug_macro   0x000004f9       0x3f ./MCAL/SYSTICK/SYSTICK_program.o
- .debug_macro   0x00000538       0x22 ./MCAL/SYSTICK/SYSTICK_program.o
- .debug_macro   0x0000055a       0x76 ./MCAL/SYSTICK/SYSTICK_program.o
- .debug_macro   0x000005d0       0xaa ./MCAL/UART/UART_Lcfg.o
- .debug_macro   0x0000067a       0xa0 ./MCAL/UART/UART_program.o
- .debug_macro   0x0000071a       0x3c ./Startup/System_Init.o
+.debug_macro    0x00000000      0x863
+ .debug_macro   0x00000000      0x1d4 ./APP/main.o
+ .debug_macro   0x000001d4       0x45 ./MCAL/GPIO/GPIO_program.o
+ .debug_macro   0x00000219      0x12a ./MCAL/GPIO/GPIO_program.o
+ .debug_macro   0x00000343       0x45 ./MCAL/NVIC/NVIC_program.o
+ .debug_macro   0x00000388       0x28 ./MCAL/NVIC/NVIC_program.o
+ .debug_macro   0x000003b0       0x16 ./MCAL/NVIC/NVIC_program.o
+ .debug_macro   0x000003c6       0x44 ./MCAL/RCC/RCC_program.o
+ .debug_macro   0x0000040a      0x1fc ./MCAL/RCC/RCC_program.o
+ .debug_macro   0x00000606       0x3f ./MCAL/SYSTICK/SYSTICK_program.o
+ .debug_macro   0x00000645       0x22 ./MCAL/SYSTICK/SYSTICK_program.o
+ .debug_macro   0x00000667       0x76 ./MCAL/SYSTICK/SYSTICK_program.o
+ .debug_macro   0x000006dd       0xaa ./MCAL/UART/UART_Lcfg.o
+ .debug_macro   0x00000787       0xa0 ./MCAL/UART/UART_program.o
+ .debug_macro   0x00000827       0x3c ./Startup/System_Init.o
 
-.debug_line     0x00000000     0x1a19
- .debug_line    0x00000000      0x30a ./APP/main.o
- .debug_line    0x0000030a      0x3ea ./MCAL/GPIO/GPIO_program.o
- .debug_line    0x000006f4      0x28a ./MCAL/NVIC/NVIC_program.o
- .debug_line    0x0000097e      0x29e ./MCAL/RCC/RCC_program.o
- .debug_line    0x00000c1c      0x353 ./MCAL/SYSTICK/SYSTICK_program.o
- .debug_line    0x00000f6f      0x268 ./MCAL/UART/UART_Lcfg.o
- .debug_line    0x000011d7      0x694 ./MCAL/UART/UART_program.o
- .debug_line    0x0000186b      0x133 ./Startup/System_Init.o
- .debug_line    0x0000199e       0x7b ./Startup/startup_stm32f401ccux.o
+.debug_line     0x00000000     0x1e35
+ .debug_line    0x00000000      0x798 ./APP/main.o
+ .debug_line    0x00000798      0x3ea ./MCAL/GPIO/GPIO_program.o
+ .debug_line    0x00000b82      0x27e ./MCAL/NVIC/NVIC_program.o
+ .debug_line    0x00000e00      0x298 ./MCAL/RCC/RCC_program.o
+ .debug_line    0x00001098      0x34d ./MCAL/SYSTICK/SYSTICK_program.o
+ .debug_line    0x000013e5      0x244 ./MCAL/UART/UART_Lcfg.o
+ .debug_line    0x00001629      0x670 ./MCAL/UART/UART_program.o
+ .debug_line    0x00001c99      0x121 ./Startup/System_Init.o
+ .debug_line    0x00001dba       0x7b ./Startup/startup_stm32f401ccux.o
 
-.debug_str      0x00000000     0x6978
- .debug_str     0x00000000     0x3fe8 ./APP/main.o
-                               0x4054 (size before relaxing)
- .debug_str     0x00003fe8      0xe67 ./MCAL/GPIO/GPIO_program.o
-                               0x4067 (size before relaxing)
- .debug_str     0x00004e4f      0x694 ./MCAL/NVIC/NVIC_program.o
-                               0x36d8 (size before relaxing)
- .debug_str     0x000054e3      0xc52 ./MCAL/RCC/RCC_program.o
-                               0x403e (size before relaxing)
- .debug_str     0x00006135      0x566 ./MCAL/SYSTICK/SYSTICK_program.o
-                               0x359e (size before relaxing)
- .debug_str     0x0000669b       0x19 ./MCAL/UART/UART_Lcfg.o
-                               0x3f49 (size before relaxing)
- .debug_str     0x000066b4      0x261 ./MCAL/UART/UART_program.o
-                               0x4729 (size before relaxing)
- .debug_str     0x00006915       0x24 ./Startup/System_Init.o
-                               0x3321 (size before relaxing)
- .debug_str     0x00006939       0x3f ./Startup/startup_stm32f401ccux.o
-                                 0x70 (size before relaxing)
+.debug_str      0x00000000     0xa225
+ .debug_str     0x00000000     0x7895 ./APP/main.o
+                               0x79cf (size before relaxing)
+ .debug_str     0x00007895      0xe67 ./MCAL/GPIO/GPIO_program.o
+                               0x4061 (size before relaxing)
+ .debug_str     0x000086fc      0x694 ./MCAL/NVIC/NVIC_program.o
+                               0x36d2 (size before relaxing)
+ .debug_str     0x00008d90      0xc52 ./MCAL/RCC/RCC_program.o
+                               0x4038 (size before relaxing)
+ .debug_str     0x000099e2      0x566 ./MCAL/SYSTICK/SYSTICK_program.o
+                               0x3598 (size before relaxing)
+ .debug_str     0x00009f48       0x19 ./MCAL/UART/UART_Lcfg.o
+                               0x3f5b (size before relaxing)
+ .debug_str     0x00009f61      0x261 ./MCAL/UART/UART_program.o
+                               0x473b (size before relaxing)
+ .debug_str     0x0000a1c2       0x24 ./Startup/System_Init.o
+                               0x331b (size before relaxing)
+ .debug_str     0x0000a1e6       0x3f ./Startup/startup_stm32f401ccux.o
+                                 0x6a (size before relaxing)
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./APP/main.o
@@ -1357,6 +1481,6 @@ LOAD /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_frame   0x00000b00       0x24 /opt/st/stm32cubeide_1.16.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.200.202406132123/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixunsdfsi.o)
 
 .debug_line_str
-                0x00000000       0x54
+                0x00000000       0x4e
  .debug_line_str
-                0x00000000       0x54 ./Startup/startup_stm32f401ccux.o
+                0x00000000       0x4e ./Startup/startup_stm32f401ccux.o

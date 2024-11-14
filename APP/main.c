@@ -27,7 +27,7 @@ int main(void)
 	UART_voidInit(&UART1_Cfg);
 
 	for(;;){
-		
+		void BL_UART_Fetch_Host_Command();
 	}
 }
 

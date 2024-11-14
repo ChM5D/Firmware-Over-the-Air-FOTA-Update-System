@@ -1,0 +1,3 @@
+../MCAL/CRC/CRC_program.c:39:6:CRC_RESET_DR	1
+../MCAL/CRC/CRC_program.c:44:6:CRC_Init	1
+../MCAL/CRC/CRC_program.c:49:5:CRC_Accumlate	2

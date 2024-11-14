@@ -2,6 +2,7 @@
 "./APP/main.o"
 "./LIB/syscalls.o"
 "./LIB/sysmem.o"
+"./MCAL/CRC/CRC_program.o"
 "./MCAL/FPEC/FPEC_program.o"
 "./MCAL/GPIO/GPIO_program.o"
 "./MCAL/NVIC/NVIC_program.o"

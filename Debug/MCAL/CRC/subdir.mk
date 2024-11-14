@@ -5,26 +5,23 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../LIB/syscalls.c \
-../LIB/sysmem.c 
+../MCAL/CRC/CRC_program.c 
 
 OBJS += \
-./LIB/syscalls.o \
-./LIB/sysmem.o 
+./MCAL/CRC/CRC_program.o 
 
 C_DEPS += \
-./LIB/syscalls.d \
-./LIB/sysmem.d 
+./MCAL/CRC/CRC_program.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-LIB/%.o LIB/%.su LIB/%.cyclo: ../LIB/%.c LIB/subdir.mk
+MCAL/CRC/%.o MCAL/CRC/%.su MCAL/CRC/%.cyclo: ../MCAL/CRC/%.c MCAL/CRC/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/chelly/Desktop/work space/FOTA" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 
-clean: clean-LIB
+clean: clean-MCAL-2f-CRC
 
-clean-LIB:
-	-$(RM) ./LIB/syscalls.cyclo ./LIB/syscalls.d ./LIB/syscalls.o ./LIB/syscalls.su ./LIB/sysmem.cyclo ./LIB/sysmem.d ./LIB/sysmem.o ./LIB/sysmem.su
+clean-MCAL-2f-CRC:
+	-$(RM) ./MCAL/CRC/CRC_program.cyclo ./MCAL/CRC/CRC_program.d ./MCAL/CRC/CRC_program.o ./MCAL/CRC/CRC_program.su
 
-.PHONY: clean-LIB
+.PHONY: clean-MCAL-2f-CRC
 

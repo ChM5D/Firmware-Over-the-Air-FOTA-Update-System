@@ -1,0 +1,2 @@
+../APP/Bootloader.c:36:13:Bootloader_Get_version	16	static
+../APP/Bootloader.c:42:6:BL_UART_Fetch_Host_Command	8	static

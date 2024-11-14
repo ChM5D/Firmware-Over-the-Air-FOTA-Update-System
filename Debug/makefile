@@ -17,6 +17,7 @@ RM := rm -rf
 -include MCAL/NVIC/subdir.mk
 -include MCAL/GPIO/subdir.mk
 -include MCAL/FPEC/subdir.mk
+-include MCAL/CRC/subdir.mk
 -include LIB/subdir.mk
 -include APP/subdir.mk
 -include objects.mk
@@ -41,34 +42,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := BL_project
+BUILD_ARTIFACT_NAME := FOTA
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-BL_project.elf \
+FOTA.elf \
 
 MAP_FILES += \
-BL_project.map \
+FOTA.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-BL_project.list \
+FOTA.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: BL_project.elf secondary-outputs
+main-build: FOTA.elf secondary-outputs
 
 # Tool invocations
-BL_project.elf BL_project.map: $(OBJS) $(USER_OBJS) /home/chelly/Desktop/work\ space/BL_project/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BL_project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/chelly/Desktop/work space/BL_project/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BL_project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FOTA.elf FOTA.map: $(OBJS) $(USER_OBJS) /home/chelly/Desktop/work\ space/FOTA/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FOTA.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/chelly/Desktop/work space/FOTA/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOTA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -77,14 +78,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-BL_project.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "BL_project.list"
+FOTA.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "FOTA.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) BL_project.elf BL_project.list BL_project.map default.size.stdout
+	-$(RM) FOTA.elf FOTA.list FOTA.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

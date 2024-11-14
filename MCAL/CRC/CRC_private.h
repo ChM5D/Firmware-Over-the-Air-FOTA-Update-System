@@ -1,35 +1,24 @@
 /*
- * Bootloader.h
+ * CRC_private.h
  *
- *  Created on: Nov 12, 2024
+ *  Created on: Nov 14, 2024
  *      Author: chelly
  */
 
-#ifndef APP_BOOTLOADER_H_
-#define APP_BOOTLOADER_H_
-
+#ifndef MCAL_CRC_CRC_PRIVATE_H_
+#define MCAL_CRC_CRC_PRIVATE_H_
 
 /**********************************************************************************************************************
  * INCLUDES
  *********************************************************************************************************************/
-#include <string.h>
-#include "MCAL/UART/UART_Lcfg.h"
-#include "MCAL/SCB/SCB_private.h"
-#include "MCAL/FPEC/FPEC_intrface.h"
-#include "MCAL/CRC/CRC_interface.h"
+#include "LIB/STD_TYPES.h"
+#include "LIB/BIT_MATH.h"
+#include "MCAL/RCC/RCC_interface.h"
 
 /**********************************************************************************************************************
  *  GLOBAL CONSTANT MACROS
  *********************************************************************************************************************/
-#define BL_HOST_RX_BUFFER_RX_LENGTH 200
-#define BL_HOST_COMMUNICATION_UART &UART1_Cfg
-
-#define CBL_GET_VER            0x10
-#define CBL_GET_CID            0x12
-#define CBL_GET_RDP_STATUS     0x13
-#define CBL_APP_ERASE          0x15
-#define CBL_MEM_WRITE          0x16
-#define CBL_GO_TO_MAIN_APP     0x18
+#define CRC ((CRC_t*)0x40023000)
 
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION MACROS
@@ -39,7 +28,11 @@
 /**********************************************************************************************************************
  *  GLOBAL DATA TYPES AND STRUCTURES
  *********************************************************************************************************************/
-
+typedef struct {
+	volatile u32 DR;
+	volatile u32 IDR;
+	volatile u32 CR;
+}CRC_t;
 
 /**********************************************************************************************************************
  *  GLOBAL DATA PROTOTYPES
@@ -49,14 +42,13 @@
 /**********************************************************************************************************************
  *  GLOBAL FUNCTION PROTOTYPES
  *********************************************************************************************************************/
-void BL_UART_Fetch_Host_Command(void);
 
-#endif /* APP_BOOTLOADER_H_ */
+
+#endif /* MCAL_CRC_CRC_PRIVATE_H_ */
 
 /**********************************************************************************************************************
- *  END OF FILE: Bootloader.h
+ *  END OF FILE
  *********************************************************************************************************************/
-
 
 
 
